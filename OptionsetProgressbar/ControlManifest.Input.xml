@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="SampleOptionsetProgressbar" constructor="OptionsetProgressbar" version="0.1.3"
+  <control namespace="SampleOptionsetProgressbar" constructor="OptionsetProgressbar" version="0.1.4"
     display-name-key="OptionsetProgressbar"
     description-key="Show Optionset how a Progress bar with stages." control-type="standard">
     <!--external-service-usage
@@ -30,9 +30,6 @@
     description-key="Property_Desc_Key" of-type="SingleLine.Text" usage="bound" required="true" /> -->
     <property name="OptionSetField" display-name-key="OptionSetFieldDisplayName"
       description-key="Option Set Field to Progress Bar " of-type="OptionSet" usage="bound"
-      required="true" />
-    <property name="ReadOnly" display-name-key="ReadOnlyDisplayName"
-      description-key="" of-type="TwoOptions" usage="input"
       required="true" />
     <!--
       Property node's of-type attribute can be of-type-group attribute.

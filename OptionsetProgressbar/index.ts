@@ -33,7 +33,7 @@ export class OptionsetProgressbar implements ComponentFramework.StandardControl<
     public init(context: ComponentFramework.Context<IInputs>, notifyOutputChanged: () => void, state: ComponentFramework.Dictionary, container: HTMLDivElement): void {
         let opts = context.parameters.OptionSetField.attributes!.Options;
         this.allOptions = opts;
-        this.isReadOnly = context.parameters.ReadOnly.raw ?? false;
+        this.isReadOnly = true;
         let i = 0;
         this.dropdownOptions = this.allOptions.map((option: ComponentFramework.PropertyHelper.OptionMetadata, i: any) => ({ Value: option.Value, Label: option.Label, Color: { color: option.Color }, Id: i + 1, Status: "" }))
         this.defaultValue = context.parameters.OptionSetField.attributes?.DefaultValue;
