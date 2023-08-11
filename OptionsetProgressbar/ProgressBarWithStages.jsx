@@ -6,10 +6,6 @@ const ProgressBarWithStages = (props) => {
   const [selectedItemId, setSelectedItemId] = React.useState(props.params.selectedKey)
   //console.log(props);
 
-  function onClicklog(item) {
-    console.log(item);
-  }
-
   return (
     <div class='stepper-wrapper'>
       {props.params.options.map((e, i) => <div class={e.Status} key={e.Value} id={i} onClick={() => props.params.onChange(e.Value)}>

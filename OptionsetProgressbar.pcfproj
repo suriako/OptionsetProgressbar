@@ -11,7 +11,7 @@
     <Name>OptionsetProgressbar</Name>
     <ProjectGuid>43c8df67-c531-4508-8bae-8e7e8452d976</ProjectGuid>
     <OutputPath>$(MSBuildThisFileDirectory)out\controls</OutputPath>
-    <!--<PcfBuildMode>production</PcfBuildMode>-->
+    <PcfBuildMode>production</PcfBuildMode>
   </PropertyGroup>
 
   <PropertyGroup>

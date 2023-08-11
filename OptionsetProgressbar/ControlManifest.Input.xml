@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest>
-  <control namespace="SampleOptionsetProgressbar" constructor="OptionsetProgressbar" version="0.1.4"
+  <control namespace="SampleOptionsetProgressbar" constructor="OptionsetProgressbar" version="0.1.5"
     display-name-key="OptionsetProgressbar"
     description-key="Show Optionset how a Progress bar with stages." control-type="standard">
     <!--external-service-usage
