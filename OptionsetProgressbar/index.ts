@@ -12,6 +12,7 @@ export class OptionsetProgressbar implements ComponentFramework.StandardControl<
     private dropdownOptions: any;
     private container: HTMLDivElement;
     private currentValue: number | null | undefined;
+    //private currentPos: number | null | undefined;
     private notifyOutputChanged: () => void;
     private isReadOnly: boolean;
 
@@ -71,6 +72,23 @@ export class OptionsetProgressbar implements ComponentFramework.StandardControl<
                     this.notifyOutputChanged();
                 }
             },
+           /* onBack: (clickValue: number | null) => {
+                if(clickValue != this.currentValue) return;
+                let newValue = undefined;
+                if (this.isReadOnly == false) 
+                {
+                    for (let clave in this.dropdownOptions) {
+                        if (this.dropdownOptions[clave].Value == this.currentValue) {                                                       
+                            break;                            
+                        }
+                        else{
+                            newValue = this.dropdownOptions[clave].Value;
+                        }
+                    }
+                    this.currentValue = newValue;
+                    this.notifyOutputChanged();
+                }
+            },*/
             isDisabled: this.isDisabled,
             defaultValue: this.defaultValue,
             ReadOnly: this.isReadOnly
